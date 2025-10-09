@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Undangan Pernikahan Yunus & Dewi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.0/dist/vanilla-tilt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- Landing Section with Particles -->
+    <section id="hero" class="hero">
+      <div id="particles-js"></div>
+      <div class="hero-content">
+        <h1 class="hero-names" data-aos="fade-up">Yunus & Dewi</h1>
+		<p class="event-date" data-aos="fade-up" data-aos-delay="200">Jum'at, 05 Desember 2025 (Akad Nikah)</p>
+		<p class="event-date" data-aos="fade-up" data-aos-delay="200">Minggu, 07 Desember 2025 (Resepsi)</p>
+        <button
+          class="scroll-btn"
+          data-aos="fade-up"
+          data-aos-delay="400"
+          onclick="scrollToContent()"
+        >
+          Lihat Undangan
+        </button>
+      </div>
+    </section>
+	
+	<script>
+	window.addEventListener('DOMContentLoaded', function () {
+  // Ambil nama dari query parameter `to`
+  const urlParams = new URLSearchParams(window.location.search);
+  const guestName = urlParams.get('to');
+  if (guestName) {
+    document.getElementById('guestGreeting').innerHTML =
+      `Assalamu'alaikum dan salam hangat, <b>${guestName.replace(/\+/g, ' ')}</b>.<br>
+      Dengan segala hormat, kami mengundang Anda untuk hadir di momen bahagia kami.`;
+  }
+});
+</script>
+
+	<section id="welcome" class="section">
+		<div class="welcome-message" data-aos="fade-up">
+		<h2>Salam Hangat untuk Tamu Undangan</h2>
+		<p id="guestGreeting">
+		"Assalamu'alaikum warahmatullahi wabarakatuh. Dengan hormat, kami mengundang kehadiran Bapak/Ibu/Saudara/i pada acara pernikahan kami. Semoga kehadiran Anda menjadi berkah dan kebahagiaan bagi kami berdua."
+		</p>
+		</div>
+	</section>
+
+    <!-- Enhanced Couple Section -->
+    <section id="couple" class="section">
+      <h2 data-aos="fade-up">Mempelai</h2>
+      <div class="couple-container">
+        <div class="person" data-aos="fade-right">
+          <img
+            src="https://raw.githubusercontent.com/yunusdewimenikah/undangan-pernikahan-yunus-dewi/main/assets/images/avatar-yunus.png"
+            alt="Yunus"
+            loading="lazy"
+          />
+          <h3>Muhammad Yunus, S.T.</h3>
+          <p>Putra Pertama dari</p>
+          <p>Bpk. Ambo Tuo &</p>
+          <p>Ibu Muliati</p>
+        </div>
+        <div class="person" data-aos="fade-left">
+          <img
+            src="https://raw.githubusercontent.com/yunusdewimenikah/undangan-pernikahan-yunus-dewi/main/assets/images/avatar-dewi.png"
+            alt="Dewi"
+            loading="lazy"
+          />
+          <h3>Dewi Fatimah Ihsary, S.K.M.</h3>
+          <p>Putri Pertama dari</p>
+          <p>Bpk. Ihsan, S.Pd. &</p>
+          <p>Ibu Dra. Hj. Ernashari Akil, M.Si.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enhanced Countdown -->
+    <section id="countdown" class="section">
+      <h2 data-aos="fade-up">Menuju Hari Bahagia</h2>
+      <div class="countdown-container" data-aos="fade-up">
+        <div class="countdown-item">
+          <span id="days">00</span>
+          <span>Hari</span>
+        </div>
+        <div class="countdown-item">
+          <span id="hours">00</span>
+          <span>Jam</span>
+        </div>
+        <div class="countdown-item">
+          <span id="minutes">00</span>
+          <span>Menit</span>
+        </div>
+        <div class="countdown-item">
+          <span id="seconds">00</span>
+          <span>Detik</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enhanced Event Details -->
+<section id="event" class="section">
+  <h2 data-aos="fade-up">Detail Acara</h2>
+  <div class="event-container">
+    <div class="event-card" data-aos="fade-up">
+      <h3>Akad Nikah</h3>
+      <p>Jum'at, 05 Desember 2025</p>
+      <p>10:00 WITA - Selesai</p>
+      <p>BTN Danau Tempe Permai Blok BB 32</p>
+    </div>
+    <div class="event-card" data-aos="fade-up" data-aos-delay="200">
+      <h3>Resepsi Mempelai Pria</h3>
+      <p>Minggu, 07 Desember 2025</p>
+      <p>10:00 WITA - Selesai</p>
+      <p>Jln. Mattuppuang No. 079, Pajalele, Kec. Tanasitolo, Kab. Wajo</p>
+    </div>
+    <div class="event-card" data-aos="fade-up" data-aos-delay="400">
+      <h3>Resepsi Mempelai Wanita</h3>
+      <p>Minggu, 07 Desember 2025</p>
+      <p>13:00 WITA - Selesai</p>
+      <p>Sallo Hotel Sengkang</p>
+      <p>Jln. H. Bahe, Tempe, Kec. Tempe, Kab. Wajo</p>
+    </div>
+  </div>
+
+  <div class="map-container" data-aos="fade-up">
+    <h3>Lokasi Akad Nikah</h3>
+    <iframe
+      src="https://www.google.com/maps?q=-4.110256,120.026750&hl=es;z=14&output=embed"
+      width="100%"
+      height="300"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+	<button onclick="openMap(-4.110256,120.026750)">Buka Lokasi Akad Nikah</button>
+  </div>
+  <div class="map-container" data-aos="fade-up" style="margin-top: 20px;">
+    <h3>Lokasi Resepsi Mempelai Pria</h3>
+    <iframe
+      src="https://www.google.com/maps?q=-4.088386,120.021875&hl=es;z=14&output=embed"
+      width="100%"
+      height="300"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+	<button onclick="openMap(-4.088386,120.021875)">Buka Lokasi Resepsi Mempelai Pria</button>
+  </div>
+  <div class="map-container" data-aos="fade-up" style="margin-top: 20px;">
+    <h3>Lokasi Resepsi Mempelai Wanita</h3>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d676.0015893599181!2d120.02595721869905!3d-4.123266250554657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d95e708a6fd045b%3A0x1fcb56928e1dc27!2sSallo%20Hotel%20Sengkang!5e1!3m2!1sid!2sid!4v1759963525937!5m2!1sid!2sid"
+      width="100%"
+      height="300"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+	<button onclick="openMap(-4.123266,120.025957)">Buka Lokasi Resepsi Mempelai Wanita</button>
+  </div>
+</section>
+
+    <!-- Enhanced Wishes Section -->
+	<section id="wishes" class="section">
+		<h2 data-aos="fade-up">Ucapan & Doa</h2>
+		<div class="wishes-container">
+			<div class="wishes-form" data-aos="fade-up">
+				<form id="wishForm">
+					<textarea
+						name="message"
+						placeholder="Tulis ucapan dan doa Anda di sini..."
+						required
+					></textarea>
+					<input type="text" name="name" placeholder="Nama Anda" required />
+					<button type="submit">Kirim Ucapan</button>
+				</form>
+			</div>
+			<div id="comments-list" class="wishes-list" data-aos="fade-up"></div>
+		</div>
+	</section>
+
+    <!-- Enhanced Gift Section -->
+    <section id="gift" class="section">
+      <h2 data-aos="fade-up">Informasi Hadiah</h2>
+		<p class="gift-poetry" data-aos="fade-up">
+			"Cinta yang dirangkai dalam doa,<br>
+			bersemi di antara suka dan duka.<br>
+			Bila berkenan berbagi kebahagiaan,<br>
+			restu serta doa adalah anugerah terindah,<br>
+			dan titipan berkah menjadi tanda kasih yang tulus dari para sahabat semua."
+		</p>
+	  <div class="gift-container" data-aos="fade-up">
+        <div class="gift-card">
+          <h3>Rekening Bank</h3>
+          <div class="gift-content">
+            <p>Bank Mandiri</p>
+            <p>1620006922284</p>
+            <p>a.n. Muhammad Yunus</p>
+          </div>
+          <button onclick="copyRekening()">Salin Nomor Rekening</button>
+        </div>
+		<div class="gift-card">
+          <h3>Rekening Bank</h3>
+          <div class="gift-content">
+            <p>Bank Syariah Indonesia</p>
+            <p>7211630013</p>
+            <p>a.n. Dewi Fatimah Ihsary</p>
+          </div>
+          <button onclick="copyRekening()">Salin Nomor Rekening</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enhanced Closing -->
+    <section id="closing" class="section">
+      <div class="closing-content" data-aos="fade-up">
+        <h2>Terima Kasih</h2>
+        <p>
+          "Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila
+          Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada
+          kami."
+        </p>
+        <h3>Yunus & Dewi</h3>
+      </div>
+    </section>
+
+    <!-- Enhanced Music Player -->
+    <div id="music-player">
+      <button id="toggle-music" onclick="toggleMusic()">
+        <span class="music-icon">♫</span>
+      </button>
+      <audio id="background-music" loop>
+        <source src="https://raw.githubusercontent.com/yunusdewimenikah/undangan-pernikahan-yunus-dewi/main/assets/music/Terbuang%20Dalam%20Waktu%20-%20Barasuara%20(Peaceful%20Piano).mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="main.js"></script>
+	
+	<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+  import { getFirestore, collection, addDoc, query, orderBy, onSnapshot, serverTimestamp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyAIRH0XNSBZHF2_-QqVLaqHbdfOLVJgC3Y",
+    authDomain: "pernikahan-yunus-dewi.firebaseapp.com",
+    projectId: "pernikahan-yunus-dewi",
+    storageBucket: "pernikahan-yunus-dewi.appspot.com",
+    messagingSenderId: "135055523527",
+    appId: "1:135055523527:web:a27e6be616ae85ac445d7a",
+    measurementId: "G-74XQPXI91"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  // Submit komentar ke Firestore
+  document.getElementById('wishForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const name = form.name.value.trim();
+    const message = form.message.value.trim();
+    if (!name || !message) return;
+
+    await addDoc(collection(db, "comments"), {
+      name,
+      message,
+      createdAt: serverTimestamp()
+    });
+
+    form.reset();
+  });
+
+  // Render komentar realtime dari Firestore
+  const commentsList = document.getElementById('comments-list');
+  const q = query(collection(db, "comments"), orderBy("createdAt", "desc"));
+  onSnapshot(q, (snapshot) => {
+    commentsList.innerHTML = '';
+    snapshot.forEach(doc => {
+      const data = doc.data();
+      commentsList.innerHTML += `
+        <div class="comment-item">
+          <p><strong>${data.name}</strong> (${data.createdAt?.toDate().toLocaleString() || ''}):</p>
+          <p>${data.message}</p>
+        </div>
+      `;
+    });
+  });
+  
+  // Tanggal & jam acara: 5 Desember 2025 10:00 WITA (UTC+8)
+var weddingDate = new Date('2025-12-05T10:00:00+08:00');
+
+function updateCountdown() {
+  var now = new Date();
+  var diff = weddingDate - now;
+  if (diff <= 0) diff = 0;
+  var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+  var minutes = Math.floor((diff / (1000 * 60)) % 60);
+  var seconds = Math.floor((diff / 1000) % 60);
+  document.getElementById('days').textContent = days.toString().padStart(2, '0');
+  document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+  document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+  document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+}
+setInterval(updateCountdown, 1000);
+updateCountdown();
+</script>
+
+  </body>
+</html>
