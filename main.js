@@ -64,6 +64,35 @@ particlesJS("particles-js", {
   retina_detect: true,
 });
 
+const backgrounds = [
+  'https://raw.githubusercontent.com/yunusdewimenikah/undangan-pernikahan-yunus-dewi/main/assets/images/beatriz-perez-moya-M2T1j-6Fn8w-unsplash.jpg',
+  'https://raw.githubusercontent.com/yunusdewimenikah/undangan-pernikahan-yunus-dewi/main/assets/images/chuttersnap-iQVn40PdwW0-unsplash.jpg',
+  'https://raw.githubusercontent.com/yunusdewimenikah/undangan-pernikahan-yunus-dewi/main/assets/images/kerri-shaver-xepikEyPgmI-unsplash.jpg',
+  'https://raw.githubusercontent.com/yunusdewimenikah/undangan-pernikahan-yunus-dewi/main/assets/images/nastia-petruk-UIO1Q6im1ik-unsplash.jpg',
+  'https://raw.githubusercontent.com/yunusdewimenikah/undangan-pernikahan-yunus-dewi/main/assets/images/tyler-raye-em_rq3zjEGM-unsplash.jpg'
+];
+
+let currentIndex = 0;
+
+function changeBackground() {
+  const particleDiv = document.getElementById('particles-js');
+  if (!particleDiv) {
+    console.warn('#particles-js tidak ada di DOM');
+    return;
+  }
+  console.log('Ganti background ke:', backgrounds[currentIndex]);
+  particleDiv.style.transition = "background-image 1s ease-in-out";
+  particleDiv.style.backgroundImage =
+    `linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('${backgrounds[currentIndex]}')`;
+  currentIndex = (currentIndex + 1) % backgrounds.length;
+}
+
+// Set background initial supaya langsung muncul
+window.addEventListener('DOMContentLoaded', () => {
+  changeBackground();
+  setInterval(changeBackground, 10000);
+});
+
 // Initialize Vanilla Tilt
 VanillaTilt.init(
   document.querySelectorAll(".person, .event-card, .gift-card"),

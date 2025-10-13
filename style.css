@@ -26,6 +26,19 @@ body {
   line-height: 1.6;
   background-color: var(--background-color);
 }
+
+#main-content-background {
+  background-image: url('https://raw.githubusercontent.com/yunusdewimenikah/undangan-pernikahan-yunus-dewi/main/assets/images/alvaro-juliao-Ykp7dKkbN08-unsplash.jpg');
+  background-repeat: repeat-y;
+  background-position: center top;
+  background-attachment: scroll; /* atau fixed jika mau efek parallax sederhana */
+  background-size: auto; /* biarkan width/height asli gambar */
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  border-radius: 20px;
+}
+
 .welcome-message {
   background: white;
   border-radius: 18px;
@@ -57,8 +70,11 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('https://unsplash.com/s/photos/wedding-background?random') center/cover no-repeat fixed;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: none; /* pastikan ini tidak ada gambar default */
 }
 
 .hero-content {
