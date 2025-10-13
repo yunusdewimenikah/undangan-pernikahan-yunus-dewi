@@ -91,8 +91,8 @@ body {
 }
 
 .hero-content h1 {
-  font-family: var(--font-primary);
-  font-size: 5rem;
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
   margin-bottom: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   animation: fadeInUp 1.5s ease;
@@ -105,21 +105,57 @@ body {
   animation: fadeInUp 1.5s ease 0.5s backwards;
 }
 
+.hero-title {
+  font-family: 'Sacramento', cursive;    /* Atau bebas, misal serif */
+  font-size: 2.8rem;                  /* Lebih kecil dari .hero-names */
+  color: var(--primary-color);         /* Beda warna bisa (misal accent) */
+  font-weight: 400;                   /* Bisa lebih ringan */
+  letter-spacing: 3px;
+  text-transform: uppercase;          /* Optional: biar makin beda */
+  margin-bottom: 0.7rem;
+}
+
 .hero-names {
   font-family: 'Great Vibes', cursive;
-  font-size: 5rem;
+  font-size: 8rem;
   color: var(--primary-color);
   text-shadow: 2px 2px 4px rgba(0,0,0,0.13);
   letter-spacing: 2px;
 }
 
-.event-date {
-  font-family: 'Great Vibes', cursive;
-  font-size: 2.2rem;
-  color: var(--primary-color);
-  letter-spacing: 1px;
-  margin-bottom: 1rem;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.09);
+.great-vibes-message {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+.ayat-message {
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  margin: 3rem auto 0 auto;   /* bisa tambah jarak atas */
+  max-width: 600px;
+  padding: 2.5rem;
+}
+.ayat-message .ayat-ar-rum {
+  font-size: 5rem;
+  font-style: italic;
+  color: var(--accent-color);
+  text-align: center;
+}
+
+.opening-message {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--text-color);
+  font-style: italic;
+  text-align: center;
 }
 
 .scroll-btn {
