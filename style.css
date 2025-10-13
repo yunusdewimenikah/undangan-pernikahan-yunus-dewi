@@ -107,7 +107,7 @@ body {
 
 .hero-title {
   font-family: 'Sacramento', cursive;    /* Atau bebas, misal serif */
-  font-size: 2.8rem;                  /* Lebih kecil dari .hero-names */
+  font-size: 2rem;                  /* Lebih kecil dari .hero-names */
   color: var(--primary-color);         /* Beda warna bisa (misal accent) */
   font-weight: 400;                   /* Bisa lebih ringan */
   letter-spacing: 3px;
@@ -117,7 +117,7 @@ body {
 
 .hero-names {
   font-family: 'Great Vibes', cursive;
-  font-size: 5rem;
+  font-size: 4rem;
   color: var(--primary-color);
   text-shadow: 2px 2px 4px rgba(0,0,0,0.13);
   letter-spacing: 2px;
