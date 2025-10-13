@@ -65,7 +65,9 @@ particlesJS("particles-js", {
 });
 
 const backgrounds = [
-  'https://raw.githubusercontent.com/yunusdewimenikah/undangan-pernikahan-yunus-dewi/main/assets/images/beatriz-perez-moya-M2T1j-6Fn8w-unsplash.jpg',
+  'https://raw.githubusercontent.com/yunusdewimenikah/undangan-pernikahan-yunus-dewi/main/assets/images/aleksandra-miletic-qHsexJcf7Mk-unsplash.jpg',
+  'https://raw.githubusercontent.com/yunusdewimenikah/undangan-pernikahan-yunus-dewi/main/assets/images/daria-mushtaieva-4wvH5lwiRX8-unsplash.jpg',
+  'https://raw.githubusercontent.com/yunusdewimenikah/undangan-pernikahan-yunus-dewi/main/assets/images/tirza-van-dijk-cNGUw-CEsp0-unsplash.jpg',
   'https://raw.githubusercontent.com/yunusdewimenikah/undangan-pernikahan-yunus-dewi/main/assets/images/chuttersnap-iQVn40PdwW0-unsplash.jpg',
   'https://raw.githubusercontent.com/yunusdewimenikah/undangan-pernikahan-yunus-dewi/main/assets/images/kerri-shaver-xepikEyPgmI-unsplash.jpg',
   'https://raw.githubusercontent.com/yunusdewimenikah/undangan-pernikahan-yunus-dewi/main/assets/images/nastia-petruk-UIO1Q6im1ik-unsplash.jpg',
