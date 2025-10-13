@@ -2,7 +2,7 @@
   --primary-color: #c7a74d;
   --secondary-color: #f9e5d9;
   --accent-color: #b18645;
-  --text-color: #2c1810;
+  --text-color: #d97e00;
   --background-color: #fff9f5;
   --font-primary: 'Great Vibes', cursive;
   --font-secondary: 'Lato', sans-serif;
@@ -759,4 +759,5 @@ button:hover {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent-color);
+
 }
