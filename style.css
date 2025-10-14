@@ -92,7 +92,7 @@ body {
 
 .hero-content h1 {
   font-family: 'Dancing Script', cursive;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   animation: fadeInUp 1.5s ease;
