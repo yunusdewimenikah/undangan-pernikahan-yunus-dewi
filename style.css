@@ -117,7 +117,7 @@ body {
 
 .hero-names {
   font-family: 'Great Vibes', cursive;
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--primary-color);
   text-shadow: 2px 2px 4px rgba(0,0,0,0.13);
   letter-spacing: 2px;
